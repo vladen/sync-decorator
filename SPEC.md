@@ -5,20 +5,20 @@
  
 <a name="sync"></a>
 # sync
-is a function.
+Is a function.
 
 ```js
 // const sync = require('sync-decorator');
   expect(sync).to.be.a('function')
 ```
 
-throws TypeError if descriptor argument is not object.
+Throws TypeError if descriptor argument is not object.
 
 ```js
 expect(() => sync({}, '', 42)).to.throw(TypeError)
 ```
 
-throws TypeError if value property of descriptor argument is not function.
+Throws TypeError if value property of descriptor argument is not function.
 
 ```js
 expect(() => sync({}, '', {})).to.throw(TypeError)
@@ -26,7 +26,7 @@ expect(() => sync({}, '', {})).to.throw(TypeError)
 
 <a name="sync"></a>
 # @sync
-appends Sync suffix to name of decorated method.
+Appends Sync suffix to name of decorated method.
 
 ```js
 /*
@@ -42,25 +42,25 @@ appends Sync suffix to name of decorated method.
   expect(new Test().method.name).to.equal('methodSync')
 ```
 
-wraps result of decorated method into promise.
+Wraps result of decorated method into promise.
 
 ```js
 expect(new Test().method()).to.be.instanceof(Promise)
 ```
 
-calls decorated method with arguments passed.
+Calls decorated method with arguments passed.
 
 ```js
 new Test().method(42, 'test').then(call => expect(call.arguments).to.include.members([42, 'test']))
 ```
 
-calls decorated method with this binding.
+Calls decorated method with this binding.
 
 ```js
 new Test().method(42, 'test').then(call => expect(call.this).to.be.instanceof(Test))
 ```
 
-does not call decorated method again until previous call finishes.
+Does not call decorated method again until previous call finishes.
 
 ```js
 const test = new Test();
@@ -69,7 +69,7 @@ test.method();
 return promise;
 ```
 
-calls decorated method again when previous call has finished.
+Calls decorated method again when previous call has finished.
 
 ```js
 const test = new Test();
