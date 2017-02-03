@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/v/sync-decorator.svg)](https://www.npmjs.com/package/sync-decorator)
 [![Build Status](https://img.shields.io/travis/vladen/sync-decorator/master.svg)](https://travis-ci.org/vladen/sync-decorator)
 [![Code Climate](https://img.shields.io/codeclimate/github/vladen/sync-decorator.svg)](https://codeclimate.com/github/vladen/sync-decorator)
-[![Test Coverage](https://img.shields.io/codeclimate/coverage/vladen/sync-decorator)](https://codeclimate.com/github/vladen/sync-decorator/coverage)
+[![Test Coverage](https://img.shields.io/codeclimate/coverage/github/vladen/sync-decorator.svg)](https://codeclimate.com/github/vladen/sync-decorator/coverage)
 [![Issues](https://img.shields.io/codeclimate/issues/github/vladen/sync-decorator.svg)](https://codeclimate.com/github/vladen/sync-decorator/issues)
 
 Decorator to ensure that class method is not called by several callers simultaneously at the moment.
