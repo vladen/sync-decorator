@@ -29,6 +29,7 @@
   "scripts": {
     "check": "mocha --bail --opts mocha.opts test.js",
     "lint": "eslint *.js",
+    "prepublish": "npm run lint && npm run test",
     "spec": "mocha --opts mocha.opts --reporter markdown test.js > SPEC.md",
     "test": "nyc --reporter=lcov mocha --opts mocha.opts test.js && nyc report",
     "travis": "codeclimate-test-reporter < coverage/lcov.info"
