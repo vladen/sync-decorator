@@ -1,12 +1,13 @@
 {
   "name": "sync-decorator",
-  "description": "Decorator to ensure that class method is not called by several callers simultaneously at the moment",
+  "description": "Sync (mutex) class method decorator for ECMAScript.",
   "keywords": [
     "decorator",
+    "ECMAScript2017",
     "synchronization",
     "mutex"
   ],
-  "version": "0.1.3",
+  "version": "0.1.4",
   "license": "MIT",
   "homepage": "https://github.com/vladen/sync-decorator#readme",
   "repository": {
